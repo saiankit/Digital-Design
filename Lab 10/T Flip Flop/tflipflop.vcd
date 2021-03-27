@@ -1,0 +1,115 @@
+$date
+	Mon Nov  9 13:56:55 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tflipflop_tb $end
+$var wire 1 ! qbar $end
+$var wire 1 " q $end
+$var reg 1 # clk $end
+$var reg 1 $ reset $end
+$var reg 1 % t $end
+$scope module dut $end
+$var wire 1 # clk $end
+$var wire 1 $ reset $end
+$var wire 1 % t $end
+$var wire 1 & w1 $end
+$var wire 1 ! qbar $end
+$var wire 1 " q $end
+$scope module da $end
+$var wire 1 # clk $end
+$var wire 1 & d $end
+$var wire 1 $ reset $end
+$var reg 1 " q $end
+$var reg 1 ! qbar $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x&
+0%
+0$
+0#
+x"
+x!
+$end
+#100
+0&
+1!
+0"
+1$
+1#
+#200
+0$
+0#
+#215
+1&
+1%
+#300
+0&
+0!
+1"
+1#
+#400
+0#
+#430
+1&
+0%
+#500
+1#
+#600
+0#
+#645
+0&
+1%
+#700
+1&
+1!
+0"
+1#
+#800
+0#
+#860
+0&
+0%
+#900
+1#
+#1000
+0#
+#1075
+1&
+1%
+#1100
+0&
+0!
+1"
+1#
+#1200
+0#
+#1290
+1&
+0%
+#1505
+0&
+1%
+#1720
+1&
+0%
+#1935
+0&
+1%
+#2150
+1&
+0%
+#2365
+0&
+1%
+#2580
+1&
+0%
