@@ -1,0 +1,102 @@
+#! /usr/local/Cellar/icarus-verilog/10.3/bin/vvp
+:ivl_version "10.3 (stable)" "(v10_3)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7f885c406630 .scope module, "majority_tb" "majority_tb" 2 5;
+ .timescale -9 -9;
+v0x7f885c41ef80_0 .var "A", 0 0;
+v0x7f885c41f020_0 .var "B", 0 0;
+v0x7f885c41f0d0_0 .var "C", 0 0;
+v0x7f885c41f1a0_0 .net "F", 0 0, L_0x7f885c41f610;  1 drivers
+S_0x7f885c40eaa0 .scope module, "uut" "majority" 2 17, 3 1 0, S_0x7f885c406630;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "A"
+    .port_info 1 /INPUT 1 "B"
+    .port_info 2 /INPUT 1 "C"
+    .port_info 3 /OUTPUT 1 "F"
+L_0x7f885c41f250 .functor AND 1, v0x7f885c41ef80_0, v0x7f885c41f020_0, C4<1>, C4<1>;
+L_0x7f885c41f380 .functor AND 1, v0x7f885c41f020_0, v0x7f885c41f0d0_0, C4<1>, C4<1>;
+L_0x7f885c41f430 .functor AND 1, v0x7f885c41ef80_0, v0x7f885c41f0d0_0, C4<1>, C4<1>;
+L_0x7f885c41f4e0 .functor OR 1, L_0x7f885c41f250, L_0x7f885c41f380, C4<0>, C4<0>;
+L_0x7f885c41f610 .functor OR 1, L_0x7f885c41f430, L_0x7f885c41f4e0, C4<0>, C4<0>;
+v0x7f885c40ec00_0 .net "A", 0 0, v0x7f885c41ef80_0;  1 drivers
+v0x7f885c41ea90_0 .net "B", 0 0, v0x7f885c41f020_0;  1 drivers
+v0x7f885c41eb30_0 .net "C", 0 0, v0x7f885c41f0d0_0;  1 drivers
+v0x7f885c41ebe0_0 .net "F", 0 0, L_0x7f885c41f610;  alias, 1 drivers
+v0x7f885c41ec80_0 .net "w1", 0 0, L_0x7f885c41f250;  1 drivers
+v0x7f885c41ed60_0 .net "w2", 0 0, L_0x7f885c41f380;  1 drivers
+v0x7f885c41ee00_0 .net "w3", 0 0, L_0x7f885c41f430;  1 drivers
+v0x7f885c41eea0_0 .net "w4", 0 0, L_0x7f885c41f4e0;  1 drivers
+    .scope S_0x7f885c406630;
+T_0 ;
+    %vpi_call 2 20 "$dumpfile", "2019AAPS0331H_tb.vcd" {0 0 0};
+    %vpi_call 2 21 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7f885c406630 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f885c41ef80_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f885c41f020_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f885c41f0d0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f885c41ef80_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f885c41f020_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f885c41f0d0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f885c41ef80_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f885c41f020_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f885c41f0d0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f885c41ef80_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f885c41f020_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f885c41f0d0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f885c41ef80_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f885c41f020_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f885c41f0d0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f885c41ef80_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f885c41f020_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f885c41f0d0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f885c41ef80_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f885c41f020_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f885c41f0d0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f885c41ef80_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f885c41f020_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f885c41f0d0_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 64 "$display", "Test complete" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "2019AAPS0331H_tb.v";
+    "./2019AAPS0331H.v";

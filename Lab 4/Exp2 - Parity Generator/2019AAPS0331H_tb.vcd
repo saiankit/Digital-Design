@@ -1,0 +1,103 @@
+$date
+	Mon Sep 21 10:24:40 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module parity_tb $end
+$var wire 1 ! P $end
+$var reg 1 " A $end
+$var reg 1 # B $end
+$var reg 1 $ C $end
+$var reg 1 % I $end
+$scope module uut $end
+$var wire 1 " A $end
+$var wire 1 # B $end
+$var wire 1 $ C $end
+$var wire 1 % I $end
+$var wire 1 ! P $end
+$var wire 1 & w1 $end
+$var wire 1 ' w2 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#10
+1!
+1'
+1$
+#20
+1&
+0$
+1#
+#30
+0!
+0'
+1$
+#40
+1!
+1'
+0$
+0#
+1"
+#50
+0!
+0'
+1$
+#60
+0&
+0$
+1#
+#70
+1!
+1'
+1$
+#80
+0'
+1%
+0$
+0#
+0"
+#90
+0!
+1'
+1$
+#100
+1&
+0$
+1#
+#110
+1!
+0'
+1$
+#120
+0!
+1'
+0$
+0#
+1"
+#130
+1!
+0'
+1$
+#140
+0&
+0$
+1#
+#150
+0!
+1'
+1$
+#160
